@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+    <beans>
+    
+    <bean id="sudent1" class="com.injectobject.student">  
+    <property name="points">
+    <list>
+    <ref bean="ad1"/>
+    <ref bean="ad2"/>
+    <ref bean="ad3"/>
+    
+    </list>   
+    
+    </property>
+    </bean>
+      
+      <bean id="ad1" class="com.injectobject.address">
+      
+      <property name="aid" value="12"/>
+      <property name="bid" value="13"/>
+      
+      </bean>
+      
+      
+      <bean id="ad2" class="com.injectobject.address">
+      
+      <property name="aid" value="14"/>
+      <property name="bid" value="15"/>
+      
+      </bean>
+      
+      
+      <bean id="ad3" class="com.injectobject.address">
+      
+      <property name="aid" value="16"/>
+      <property name="bid" value="17"/>
+      
+      </bean>
+      
+    </beans>

@@ -4,6 +4,8 @@ public class address {
 
 	private int aid;
 	private int bid;
+	
+private int sid;
 
 	public int getAid() {
 		return aid;
